@@ -33,6 +33,49 @@
         }
       </style>
     </noscript>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      </style>
   </head>
   <body id="top">
     <header></header>
@@ -66,10 +109,18 @@
   </nav>
 </div>
 
-<audio id="audio" controls autoplay>
-  <source src="song.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+&nbsp;
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h5 data-aos="zoom-in-down" data-aos-duration="1000">Play Music</h5>
+      <audio controls="controls" autoplay="autoplay">
+        <source src="https://docs.google.com/uc?export=download&id=15s0gXS3doVdjWszM5jrcXWydlOFTircM">
+      </audio>
+    </div>
+  </div>
+</div>
+&nbsp;
 
 <div class="ww-section" id="couple">
   <div class="container">
@@ -228,6 +279,16 @@
     </div>
   </div>
 </div>
+&nbsp;
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1 class="h2"><a class="pl-4 navbar-brand">Maps Wedding</a></h1>
+      <iframe width="330" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=330&amp;height=400&amp;hl=en&amp;q=jl%20mega%20Bekasi+(Wdding%20Place)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+  </div>
+</div>
+&nbsp;
 <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
   <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="col text-center">
